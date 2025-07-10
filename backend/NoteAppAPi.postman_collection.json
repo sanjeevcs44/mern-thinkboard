@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "4bd24ded-50ae-4d3c-b63f-026588c97cef",
+		"name": "NoteAppAPi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3241107",
+		"_collection_link": "https://cloudy-comet-452004.postman.co/workspace/sanjeev~53e6c0d5-bd74-4900-86b3-8fd5c534ae70/collection/3241107-4bd24ded-50ae-4d3c-b63f-026588c97cef?action=share&source=collection_link&creator=3241107"
+	},
+	"item": [
+		{
+			"name": "GetAllNotes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5001/api/notes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"notes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getANote",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5001/api/notes/685b8a7f5ee8e7f5ceaefedf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"notes",
+						"685b8a7f5ee8e7f5ceaefedf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createANote",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"test post API\",\n    \"content\":\"this is test content for that api\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/api/notes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"notes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateNote",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\":\"this was first but now i have updated\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/api/notes/685b8a7f5ee8e7f5ceaefedf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"notes",
+						"685b8a7f5ee8e7f5ceaefedf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteNote",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5001/api/notes/685b8a7f5ee8e7f5ceaefedf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"notes",
+						"685b8a7f5ee8e7f5ceaefedf"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

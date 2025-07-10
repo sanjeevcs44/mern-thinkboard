@@ -1,0 +1,8 @@
+@import 'tailwindcss';
+@plugin "daisyui";
+
+@plugin "daisyui" {
+  themes: coffee, retro, dark, light, corporate, business, luxury, synthwave,
+    cyberpunk, valentine, halloween, garden, forest, winter, autumn, acid,
+    fantasy, dracula;
+}
